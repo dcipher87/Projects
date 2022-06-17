@@ -1,0 +1,17 @@
+Font Awesome details:
+#####################################################################################################
+#											        	#
+# 	NB:												#			
+# 	Script kit:											#
+#   <script src="https://kit.fontawesome.com/af4f22a78e.js" #crossorigin="anonymous"></script> 	#
+#												 	#	
+#####################################################################################################
+          <a href="https://codepen.io"> <i class="fab fa-codepen"> </i></a>
+          <a href="https://dribble.com"> <i class="fab fa-dribbble"> </i></a>
+          <a href="https://twitter.com"> <i class="fab fa-twitter"></i> </a>
+          <a href="https://github.com"> <i class="fab fa-github"></i> </a>
+          
+          <a href="https://www.facebook.com"> <i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.youtube.com"> <i class="fab fa-youtube"></a>
+          <a href="https://www.linkedin.com"> <i class="fab fa-linked-in"></a>
+          <a href="https://www.instagram.com"> <i class="fab fa-instagram"></a>

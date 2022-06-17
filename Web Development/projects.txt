@@ -1,0 +1,11 @@
+*** Project Ideas ***
+
+1. Hello Nurse
+2. Global pen friends upgrade
+3. Taste and see challange journal(online)
+4. Namhla's podcast site
+5. ecommerce custom clothes design store
+6. Reptile herp breeder site (facebook for breeders)
+7. Igroza app, compare grocery prices and provide data analysis
+8. Bank compare app, check bank rates for different accounts, rates etc (web scrapping)
+9. 

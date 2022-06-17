@@ -1,0 +1,29 @@
+Taste and See 31 Day Challenge Website
+*** Requirements
+*** Summary
+A web based app that will guide users through the 31 day taste and see Bible study challange.
+- Registered users
+Upon login you will be greeted with a splash message with details of the challenge:
+  - the verses
+  - why this challange
+  - benefits
+Once off the splash screen you will see the day's verse, COMA and a section to make notes
+Notes can be emailed to you after completion or at a set time (in the evening before bed) as a recap
+Website will send you your notes from last month, 3, 6 and 12 months ago to help you track your growth
+
+Taste and See challenge is the MVP, we will add more reading plans, ignite, bible in a year etc.
+
+- Unregistered users
+Upon login you will be greeted with a splash message with details of the challenge:
+  - the verses
+  - why this challange
+  - benefits
+Once off the splash screen you will see the day's verse, COMA (no section to make notes), will be like the pdf for Unregistered users, they will have access to all the readings daily but no log or saved notes.
+
+Site should be 5 pages max
+1. landing page with splash
+2. contact us/about us
+3. maybe forum or other resources???
+
+
+on mobile section for notes will occupy full screen, second menu which shows splash of the day's verse

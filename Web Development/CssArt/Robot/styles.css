@@ -1,0 +1,283 @@
+.canvas {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.robot {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  /* background: grey; */
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+
+  animation: hover 3s ease forwards;
+  animation-iteration-count: infinite;
+
+  animation: disappear 5s ease forwards;
+}
+.head {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: lightgray;
+  border-radius: 50%;
+  border: 5px solid darkgray;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.body {
+  position: absolute;
+  display: flex;
+  width: 150px;
+  height: 180px;
+  background: lightgray;
+  border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+  top: 95px;
+  border: 5px solid darkgray;
+  justify-content: center;
+  z-index: 1;
+}
+.shadow {
+  position: absolute;
+  display: flex;
+  width: 120px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+  top: 350px;
+
+  animation: hover-circle 3s ease forwards;
+  animation-iteration-count: infinite;
+
+  animation: disappear 5s ease forwards;
+}
+.face {
+  display: block;
+  display: flex;
+  width: 80px;
+  height: 65px;
+  background-color: #000;
+  border-radius: 35% 35% 50% 50% / 30% 30% 50% 50%;
+  margin-top: 25px;
+  justify-content: center;
+}
+.eyes {
+  position: absolute;
+  display: flex;
+  width: 63px;
+  height: 25px;
+  /* background: yellow; */
+  top: 36px;
+  left: 18.5px;
+}
+.eye {
+  display: flex;
+  position: absolute;
+}
+.right-eye {
+  position: absolute;
+  /* background: yellow; */
+  left: 38px;
+}
+.mouth {
+  display: flex;
+  position: absolute;
+  width: 65px;
+  height: 25px;
+  top: 62px;
+  left: 17.5px;
+  /* background: yellow; */
+}
+.teeth {
+  position: absolute;
+  display: flex;
+}
+.ball {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  /* background: #000; */
+  border-radius: 50%;
+}
+.head-cover {
+  position: absolute;
+  display: flex;
+  width: 40px;
+  height: 10px;
+  background: transparent;
+  top: 5px;
+}
+.head-cover .left-cover {
+  width: 25px;
+  height: 15px;
+  transform: skewX(30deg);
+  border-left: 5px solid darkgray;
+  border-bottom: 5px solid darkgray;
+}
+.head-cover .right-cover {
+  width: 25px;
+  height: 15px;
+  transform: skewX(150deg);
+  border-right: 5px solid darkgray;
+  border-bottom: 5px solid darkgray;
+}
+.body-cover {
+  position: absolute;
+  display: flex;
+  width: 100px;
+  height: 50px;
+  top: 105px;
+}
+.body-cover .left-cover {
+  width: 50%;
+  height: 35px;
+  border-top: 5px solid darkgray;
+  border-left: 5px solid darkgray;
+  transform: skewX(160deg);
+}
+.body-cover .right-cover {
+  width: 50%;
+  height: 35px;
+  border-top: 5px solid darkgray;
+  transform: skewX(20deg);
+  border-right: 5px solid darkgray;
+}
+.switch {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: red;
+  top: 25px;
+  left: 60px;
+}
+.hamburger {
+  position: absolute;
+  display: flex;
+  width: 70px;
+  height: 60px;
+  top: 28px;
+  border-radius: 25px;
+  border: 5px solid darkgray;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+/*
+  animation: appear 3s ease forwards;
+  animation-delay: 5s; */
+}
+.lines {
+  position: absolute;
+  height: 2px;
+  width: 80%;
+  background: #000;
+  margin: 2px;
+  border-radius: 25px;
+}
+.hamburger-only {
+  position: absolute;
+  display: flex;
+  width: 70px;
+  height: 60px;
+  top: 128px;
+  border-radius: 25px;
+  border: 5px solid red;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  opacity: 0;
+
+  animation: appear 3s ease forwards;
+  animation-delay: 5s;
+}
+/* @keyframes hover {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 50px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes hover-circle {
+  0% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+} */
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(0.01);
+    opacity: 0.1;
+  }
+}
+@keyframes appear {
+  0% {transform: scale(0.1); opacity: 1;}
+  100% {transform: scale(1); opacity: 1;}
+}
+/* FACE ANIMATIONS */
+
+/* Happy Face */
+/* .ball {background: #fff;} */
+
+/* .top3, .middle-one2, .middle-two2, .middle-three2, .bottom3 {
+  background: blue;
+}
+.row4 .three, .row5 .four, .row6 .four, .row7 .four, .row8 .four, .row9 .four, .row10 .three {
+  background: blue;
+} */
+
+/* Shy face */
+.top3, .middle-one2, .middle-two2, .middle-three2, .bottom3 {
+  background: blue;
+}
+.head {
+  transform: rotate(345deg);
+}
+.row11 .two, .row10 .three, .row9 .four, .row8 .four, .row7 .four, .row6 .four {
+  background: blue;
+}
+/* Crash Face */
+/* .top1, .top5, .middle-one2, .middle-one4, .middle-two3, .middle-three2, .middle-three4, .bottom1, .bottom5 {
+  background: blue;
+} */
+/* Angry Face */
+/* .left-eye .top1, .left-eye .middle-one2, .left-eye .middle-two3, .left-eye .middle-three4, .left-eye .bottom4, .right-eye .bottom1, .right-eye .middle-three2, .right-eye .middle-two3, .right-eye .middle-one4, .right-eye .top4 {
+  background: blue;
+}
+.row1 .four, .row2 .three, .row3 .two, .row4 .three, .row5 .four, .row6 .three, .row7 .two, .row8 .three, .row9 .four, .row10 .three, .row11 .two, .row12 .three, .row13 .four {
+  background: blue;
+} */
+/* Sad Face */
+/* .top3, .middle-one4, .middle-two4, .middle-three4, .bottom3 {
+  background: blue;
+}
+.row4 .four, .row5 .three, .row6 .three, .row7 .three, .row8 .three, .row9 .three, .row10 .four {
+  background: blue;
+} */
+/* Surprised Face */
+/* .top2, .top3, .top4, .middle-one1, .middle-one5, .middle-two1, .middle-two5, .middle-three1, .middle-three5, .bottom2, .bottom3, .bottom4 {
+  background: blue;
+}
+.row5 .two, .row5 .three, .row5 .four, .row6 .one, .row6 .five, .row7 .one, .row7 .five, .row8 .one, .row8 .five, .row9 .two, .row9 .three, .row9 .four {
+  background: blue;
+} */

@@ -1,0 +1,20 @@
+### Projects Folder Breakdown ###
+
+* Folders and their function
+
+1. Analysis
+Will contain all analysis documentation for all projects. This will include:
+- Design process document
+- Figma files
+- Requirements document (highleve spec)
+- Technical specification document(work in progress) 
+
+2. Data Engineering
+This folder will contain all SQL, data engineering, data science projects. Any database projects.
+
+3. Python
+This folder will contain all python projects, games and scripts
+
+4. Web development
+This folder will contain all web development projects.
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Weather App</title>
+  </head>
+  <body class="body">
+    <div class="card">
+
+      <div class="search">
+        <input type="text" class="search-bar" placeholder="Search" id="searchBar">
+        <button type="button" name="button" class="button" id="searchButton">
+        <img src="images/search-white.svg" alt="magnifying glass" width="20px" height="20px"></button>
+      </div>
+
+      <div class="weather loading">
+        <h2 class="city" id="currentCity">Weather in Johannesburg</h2>
+        <h1 class="temperature" id="temperature">51°C</h1>
+        <div class="iconDescription">
+          <img src="http://openweathermap.org/img/wn/02n@2x.png" alt="" class="icon" id="weatherIcon">
+          <div class="description" id="description">Cloudy</div>
+        </div>
+        <div class="humidity" id="humidity">Humidity: 60%</div>
+        <div class="wind" id="windSpeed">Wind speed: 6.2 km/h</div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
